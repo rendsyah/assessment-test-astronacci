@@ -7,6 +7,7 @@
     "build": "tsc",
     "start": "node dist/main.js",
     "migration:migrate": "prisma migrate dev",
+    "migration:deploy": "prisma migrate deploy",
     "migration:generate": "prisma generate",
     "migration:reset": "prisma migrate reset",
     "seed:run": "ts-node prisma/seed.ts"

@@ -100,6 +100,12 @@ npm run dev
 npm run migration:migrate
 ```
 
+### Deploy a Init Migration
+
+```bash
+npm run migration:deploy
+```
+
 ### Generate Migrations
 
 ```bash
