@@ -1,0 +1,22 @@
+services:
+  fe-test-astronacci:
+    container_name: fe-test-astronacci
+    image: fe-test-astronacci:1.0.0
+    build:
+      context: .
+    ports:
+      - '3000:3000'
+    env_file:
+      - .env
+    environment:
+      NODE_ENV: production
+      PORT: 3000
+      TZ: Asia/Jakarta
+    restart: always
+    networks:
+      - shared-networks
+
+networks:
+  shared-networks:
+    name: shared-networks
+    external: true

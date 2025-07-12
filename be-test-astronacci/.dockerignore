@@ -1,0 +1,17 @@
+# compiled output
+dist
+node_modules
+
+# config
+.env.*
+.git
+.gitignore
+.dockerignore
+.vscode
+Dockerfile
+docker-compose.yml
+Makefile
+
+# misc
+.npmrc
+README.md
